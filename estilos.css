@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 35px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #ff4f91, #ff8b72);
+  color: #fff;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 720px;
+  padding: 30px;
+  border-radius: 18px;
+  background: #171923;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, .28);
+}
+
+h1 {
+  margin: 0 0 8px;
+  text-align: center;
+  color: #ff8fbd;
+}
+
+.intro {
+  margin: 0 0 25px;
+  text-align: center;
+  color: #d7d7df;
+}
+
+.campo {
+  margin-bottom: 17px;
+}
+
+label {
+  display: block;
+  margin: 0 0 8px;
+  font-weight: bold;
+  color: #ffb3d0;
+}
+
+input {
+  width: 100%;
+  min-height: 49px;
+  padding: 12px 15px;
+  border: 2px solid #d18bab;
+  border-radius: 12px;
+  outline: none;
+  background: #292d3b;
+  color: #fff;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #c3c4ce;
+}
+
+input:focus {
+  border-color: #ff72aa;
+  box-shadow: 0 0 0 3px rgba(255, 114, 170, .15);
+}
+
+input.invalido {
+  border-color: #ff4545;
+  background: #3a2029;
+}
+
+input.valido {
+  border-color: #42d99a;
+}
+
+.correo-fijo {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.correo-fijo input {
+  border-radius: 12px 0 0 12px;
+  min-width: 0;
+}
+
+.correo-fijo span {
+  min-height: 49px;
+  display: flex;
+  align-items: center;
+  padding: 0 13px;
+  border: 2px solid #d18bab;
+  border-left: 0;
+  border-radius: 0 12px 12px 0;
+  background: #3b3040;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.error {
+  display: block;
+  min-height: 17px;
+  margin-top: 5px;
+  color: #ff7777;
+  font-size: 13px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  border-radius: 12px;
+  background: #ff5799;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .2s;
+}
+
+button:hover {
+  background: #e83d81;
+  transform: translateY(-1px);
+}
+
+#resultado {
+  min-height: 22px;
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+#resultado.exito {
+  color: #55e6a5;
+}
+
+#resultado.fallo {
+  color: #ff7777;
+}
+
+@media (max-width: 520px) {
+  .contenedor {
+    padding: 22px 17px;
+  }
+
+  h1 {
+    font-size: 23px;
+  }
+
+  .correo-fijo span {
+    padding: 0 8px;
+    font-size: 14px;
+  }
+}

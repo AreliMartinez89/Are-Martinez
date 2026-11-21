@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de registro</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <main class="contenedor">
+    <h1>Formulario de registro</h1>
+    <p class="intro">Completa tus datos y presiona VALIDAR.</p>
+
+    <form id="formulario" novalidate>
+      <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" maxlength="100"
+               placeholder="Escribe tu nombre" autocomplete="given-name">
+        <small class="error"></small>
+      </div>
+
+      <div class="campo">
+        <label for="paterno">Apellido paterno</label>
+        <input id="paterno" name="paterno" type="text" maxlength="100"
+               placeholder="Apellido paterno" autocomplete="family-name">
+        <small class="error"></small>
+      </div>
+
+      <div class="campo">
+        <label for="materno">Apellido materno</label>
+        <input id="materno" name="materno" type="text" maxlength="100"
+               placeholder="Apellido materno">
+        <small class="error"></small>
+      </div>
+
+      <div class="campo">
+        <label for="edad">Edad</label>
+        <input id="edad" name="edad" type="text" inputmode="numeric"
+               maxlength="3" placeholder="Máximo 3 números">
+        <small class="error"></small>
+      </div>
+
+      <div class="campo">
+        <label for="fecha">Fecha de nacimiento</label>
+        <input id="fecha" name="fecha" type="date">
+        <small class="error"></small>
+      </div>
+
+      <div class="campo">
+        <label for="telefono">Número de teléfono</label>
+        <input id="telefono" name="telefono" type="text" inputmode="numeric"
+               placeholder="10 dígitos (puedes separar con espacios)" maxlength="12">
+        <small class="error"></small>
+      </div>
+
+      <div class="campo">
+        <label for="correo">Correo electrónico</label>
+        <div class="correo-fijo">
+          <input id="correo" name="correo" type="text"
+                 placeholder="usuario" autocomplete="email" maxlength="64">
+          <span>@gmail.com</span>
+        </div>
+        <small class="error"></small>
+      </div>
+
+      <div class="campo">
+        <label for="tarjeta">Número de tarjeta</label>
+        <input id="tarjeta" name="tarjeta" type="text" inputmode="numeric"
+               maxlength="10" placeholder="10 números">
+        <small class="error"></small>
+      </div>
+
+      <button type="submit">VALIDAR</button>
+      <p id="resultado" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+  <script src="validacion.js"></script>
+</body>
+</html>

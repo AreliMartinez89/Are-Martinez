@@ -1,0 +1,7 @@
+FORMULARIO DE VALIDACION
+
+Abre index.html en tu navegador.
+Los tres archivos principales deben permanecer en la misma carpeta.
+
+El correo se completa con @gmail.com de forma fija.
+El campo de tarjeta es una validación escolar de 10 dígitos; no uses datos reales de tarjetas.
